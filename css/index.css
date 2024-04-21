@@ -1,0 +1,301 @@
+:root {
+  --main-color: #0078ff;
+}
+body {
+  /* background-color: #ffffff; */
+  font-family: "Roboto", sans-serif;
+}
+.landing {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.855), rgba(0, 0, 0, 0.387)),
+    url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.selected {
+  position: relative;
+}
+.selected::after {
+  content: " ";
+  width: 75%;
+  height: 3px;
+
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.my-border {
+  position: relative;
+  overflow: hidden;
+}
+.my-border::after {
+  content: " ";
+  width: 75%;
+  height: 3px;
+
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  transition: all 0.5s;
+}
+.my-border:hover:after {
+  left: 0;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.landing h1.my-font {
+  font-size: 4.5rem;
+}
+.landing h2.my-font {
+  font-size: 3.25rem;
+}
+
+/* about */
+.about {
+  box-shadow: 0 0 7px gray;
+}
+.about-me {
+  width: fit-content;
+  position: relative;
+  padding-bottom: 15px;
+}
+.about-me::after {
+  content: "";
+  width: 80%;
+  height: 4px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.about .text {
+  color: #4e4e4e;
+  font-size: 1.125rem;
+}
+.about p {
+  color: #4e4e4e;
+}
+.about .des-html div {
+  width: 100%;
+  height: 10px;
+  background-color: #cde1f8;
+  position: relative;
+  margin-bottom: 0.7rem;
+}
+.about .des-html div::after {
+  content: " ";
+  width: 85%;
+  height: 10px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about .des-css div {
+  width: 100%;
+  height: 10px;
+  background-color: #cde1f8;
+  position: relative;
+  margin-bottom: 0.7rem;
+}
+.about .des-css div::after {
+  content: " ";
+  width: 75%;
+  height: 10px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about .des-php div {
+  width: 100%;
+  height: 10px;
+  background-color: #cde1f8;
+  position: relative;
+  margin-bottom: 0.7rem;
+}
+.about .des-php div::after {
+  content: " ";
+  width: 50%;
+  height: 10px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about .des-js div {
+  width: 100%;
+  height: 10px;
+  background-color: #cde1f8;
+  position: relative;
+}
+.about .des-js div::after {
+  content: " ";
+  width: 90%;
+  height: 10px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* services */
+.title {
+  position: relative;
+}
+.title::after {
+  content: "";
+  width: 4rem;
+  height: 0.3rem;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  translate: -50%;
+}
+.service .des {
+  background-color: #ffffff;
+  box-shadow: 0 0 1px gray;
+}
+.service .des i {
+  border: 0.7rem solid var(--main-color);
+  border-radius: 50%;
+  padding: 2.6rem;
+  transition: all 0.5s;
+}
+.service .des:hover i {
+  border: 0.7rem solid #cde1f8;
+  border-radius: 50%;
+  padding: 2.6rem;
+  background-color: var(--main-color);
+}
+/* counter */
+.counter {
+  background-image: linear-gradient(#0077ff84, #0077ff84),
+    url(../images/counters-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+.counter .des i {
+  border: 0.5rem solid #cde1f8;
+  border-radius: 50%;
+  padding: 1rem;
+}
+/* portfolio */
+
+.portfolio .card .btn i {
+  color: var(--main-color);
+  padding: 0.3rem;
+  border: 0.1rem solid var(--main-color);
+  border-radius: 50%;
+}
+.portfolio .card .card-text span {
+  color: var(--main-color);
+}
+
+.portfolio .card img {
+  transition: scale 0.5s;
+  overflow: hidden;
+}
+.portfolio .card:hover img {
+  scale: 1.3;
+  overflow: hidden;
+}
+/* slider */
+.slider {
+  background-image: linear-gradient(#0077ff84, #0077ff84),
+    url(../images/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.blog .image {
+  position: relative;
+}
+.blog .image p {
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: var(--main-color);
+  color: white;
+  position: absolute;
+  bottom: -2.2rem;
+  left: 50%;
+  translate: -50%;
+}
+.blog .capaction {
+  padding: 2rem 1rem;
+}
+.blog .capaction h3,
+.owner h6 {
+  transition: all 0.5s;
+}
+.blog .capaction h3:hover,
+.blog .owner h6:hover {
+  color: var(--main-color);
+}
+
+.blog .owner img {
+  width: 10%;
+  height: 10%;
+}
+/* message */
+.message {
+  background-image: linear-gradient(#0077ff84, #0077ff84),
+    url(../images/overlay-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.message h2 {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.message h2::after {
+  content: "";
+  width: 5.4rem;
+  height: 0.2rem;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+}
+.message form input,
+textarea {
+  border: 1px #cfa6a6 dotted;
+}
+.message button {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  transition: all 0.5s;
+}
+.message button:hover {
+  background-color: #3393ff;
+}
+.message p i {
+  color: var(--main-color);
+}
+
+.message .icons i {
+  font-size: 1.2rem;
+  padding: 0.6rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+  border: 0.2rem solid var(--main-color);
+  transition: all 0.5s;
+}
+.message .icons i:hover {
+  border: white 0.2rem solid;
+  background-color: var(--main-color);
+  color: white;
+}
+.footer {
+  background-color: var(--main-color);
+  color: white;
+}
